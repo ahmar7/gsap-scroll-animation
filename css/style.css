@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+.full-screen {
+  text-align: center;
+  /* background-color: white; */
+  overflow: hidden;
+}
+h1 {
+  margin: 0;
+}
+.splash {
+  /* background-color: white; */
+}
+.img2 img {
+  width: 100%;
+}
+.img2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -9;
+}
+
+.splash svg rect {
+  height: inherit;
+}
+.splash svg path {
+  fill: white;
+}
+.splash svg {
+  /* height: 100vh; */
+  display: block;
+  grid-area: content;
+  height: 100%;
+  opacity: 1;
+  scale: 1.2;
+  overflow: hidden;
+  width: 100%;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .img2 img {
+    width: auto;
+  }
+  .splash svg {
+    scale: 4;
+  }
+}
+@media (max-width: 600px) {
+  .img2 img {
+    width: auto;
+  }
+  .splash svg {
+    scale: 4.5;
+  }
+}
+@media (max-width: 500px) {
+  .img2 img {
+    width: auto;
+  }
+  .splash svg {
+    scale: 5.5;
+  }
+}
+@media (max-width: 400px) {
+  .img2 img {
+    width: auto;
+  }
+  .splash svg {
+    scale: 6;
+  }
+}
