@@ -37,7 +37,7 @@ h1 {
   height: 100%;
   /* mask-image: linear-gradient(white, transparent); */
   opacity: 1;
-  transform: scaleX(1.5);
+  /* transform: scaleX(1.5); */
   overflow: hidden;
   width: 100%;
   z-index: 5;
@@ -47,7 +47,7 @@ h1 {
     width: auto;
   }
   .splash svg {
-    transform: scaleX(1.8);
+    /* transform: scaleX(1.8); */
   }
 }
 @media (max-width: 600px) {
