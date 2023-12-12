@@ -9,7 +9,7 @@
 //       pin: true,
 
 //       start: "50% 50%",
-//       end: "+=200%",
+//       end: "+=500%",
 
 //       //
 
@@ -59,37 +59,51 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".splash",
+      trigger: ".full-screen",
       // pin: true,
 
       // start: "50% 50%",
-      end: "bottom ",
+      end: "bottom 50%",
+      // end: "+=1000",
 
       // markers: true,
       //
 
-      scrub: 2,
+      scrub: 1,
       pin: true,
+      duration: 500,
+      ease: true,
       // pinSpacing: true,
       // endTrigger: ".img2",
     },
   })
 
   .to(".splash", {
-    ease: "linear",
+    ease: "power1.inOut",
     transformOrigin: "center ",
     scale: 105,
+    duration: 500,
   })
   .to(
     ".surf",
     {
       opacity: 0,
-      ease: "linear",
+      ease: "power1.inOut",
       transformOrigin: "center ",
       display: "none",
+      duration: 500,
+      
     },
     0
-  );
+  )
+  .from(".img2", {
+    position: "fixed",
+    pin: true,
+  })
+  .to(".img2", {
+    position: "absolute",
+    pin: true,
+  });
 // .to(".full-screen", {
 //   // display: "none",
 // })

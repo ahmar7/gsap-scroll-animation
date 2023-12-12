@@ -17,7 +17,7 @@ h1 {
   width: 100%;
 }
 .img2 {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   overflow: hidden;
@@ -35,8 +35,9 @@ h1 {
   display: block;
   grid-area: content;
   height: 100%;
+  /* mask-image: linear-gradient(white, transparent); */
   opacity: 1;
-  scale: 1.2;
+  transform: scaleX(1.5);
   overflow: hidden;
   width: 100%;
   z-index: 5;
@@ -46,7 +47,7 @@ h1 {
     width: auto;
   }
   .splash svg {
-    scale: 4;
+    transform: scaleX(1.8);
   }
 }
 @media (max-width: 600px) {
@@ -54,22 +55,24 @@ h1 {
     width: auto;
   }
   .splash svg {
-    scale: 4.5;
+    transform: scale(2);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .img2 img {
     width: auto;
   }
   .splash svg {
-    scale: 5.5;
+    transform: scale(1.5);
+    /* transform: scaleY(1.2); */
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .img2 img {
     width: auto;
   }
   .splash svg {
-    scale: 6;
+    /* transform: scaleX(1.5); */
+    transform: scale(1.8);
   }
 }
