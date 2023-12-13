@@ -78,7 +78,7 @@ const tl = gsap
     },
   })
 
-  .to(".splash", {
+  .to("svg", {
     ease: "power1.inOut",
     transformOrigin: "center ",
     // scale: 105,
