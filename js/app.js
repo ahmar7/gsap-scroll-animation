@@ -81,7 +81,8 @@ const tl = gsap
   .to(".splash", {
     ease: "power1.inOut",
     transformOrigin: "center ",
-    scale: 50,
+    // scale: 105,
+    transform: "scale3d(105,105,105)",
     duration: 500,
   })
   .to(
@@ -92,7 +93,6 @@ const tl = gsap
       transformOrigin: "center ",
       display: "none",
       duration: 500,
-      
     },
     0
   )
