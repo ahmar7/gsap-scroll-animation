@@ -12,6 +12,8 @@ h1 {
 }
 .splash {
   /* background-color: white; */
+
+  transform: scale3d(1, 1, 1);
 }
 .img2 img {
   width: 100%;
@@ -55,7 +57,7 @@ h1 {
     width: auto;
   }
   .splash svg {
-    /* transform: scale(2); */
+    transform: scale(2);
   }
 }
 @media (max-width: 550px) {
@@ -63,7 +65,7 @@ h1 {
     width: auto;
   }
   .splash svg {
-    /* transform: scale(1.5); */
+    transform: scale(1.5);
     /* transform: scaleY(1.2); */
   }
 }
@@ -73,6 +75,6 @@ h1 {
   }
   .splash svg {
     /* transform: scaleX(1.5); */
-    /* transform: scale(1.8); */
+    transform: scale(1.8);
   }
 }
