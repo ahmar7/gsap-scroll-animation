@@ -81,7 +81,7 @@ const tl = gsap
   .to(".splash", {
     ease: "power1.inOut",
     transformOrigin: "center ",
-    scale: 105,
+    scale: 50,
     duration: 500,
   })
   .to(
