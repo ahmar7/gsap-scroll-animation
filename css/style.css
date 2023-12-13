@@ -12,8 +12,6 @@ h1 {
 }
 .splash {
   /* background-color: white; */
-
-  transform: scale3d(1, 1, 1);
 }
 .img2 img {
   width: 100%;
@@ -34,6 +32,9 @@ h1 {
 }
 .splash svg {
   /* height: 100vh; */
+  shape-rendering: geometricPrecision;
+  transform: scale3d(1, 1, 1);
+  -webkit-transform: translate3d(1, 1, 1);
   display: block;
   grid-area: content;
   height: 100%;
