@@ -17,6 +17,7 @@ h1 {
   width: 100%;
 }
 .img2 {
+  width: 100%;
   /* position: fixed; */
   top: 0;
   left: 0;
@@ -32,7 +33,7 @@ h1 {
 }
 .splash svg {
   /* height: 100vh; */
-  shape-rendering: crispEdges;
+  shape-rendering: geometricPrecision;
   transform: scale3d(1, 1, 1);
   -webkit-transform: translate3d(1, 1, 1);
   display: block;
