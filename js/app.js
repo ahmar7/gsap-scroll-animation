@@ -82,7 +82,7 @@ const tl = gsap
     ease: "power1.inOut",
     transformOrigin: "center ",
     // scale: 105,
-    transform: "scale3d(105,105,105)",
+    transform: "scale3d(105,105,0)",
     duration: 500,
   })
   .to(
